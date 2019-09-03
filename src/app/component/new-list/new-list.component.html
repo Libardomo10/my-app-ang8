@@ -1,0 +1,42 @@
+<div class="animated fadeIn">
+    <div class="row">
+        <div class="col-md-4">
+            <h4 class="card-title mb-3">Chukwudi</h4>
+        </div>
+    </div>
+</div>
+<div class="card mx-auto Fitness-Card">
+    <div class="card-body">
+        <div class="row center">
+            <div class="col-6">
+                <img src="../../../assets/img/headerimage.png" height="180" width="180"/>
+            </div>
+            <div class="col-6 Fitness-Card-Info">
+                <h2 class="color1"><i class="fa fa-dollar"></i>0 delivery for 30 days! <img src="../../../assets/img/d.png" height="30" width="30"/></h2><br/>
+                <h5 class="color2"><i class="fa fa-dollar"></i>0 delivery fee for orders over $10 for 30 days</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="animated fadeIn">
+    <div class="row">
+        <div class="col-md-4">
+            <h4 class="card-title mb-3">Restaurantes</h4>
+        </div>
+    </div>
+</div>
+<div class="animated fadeIn">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let item of News">
+            <div class="card">
+                <img class="card-img-top" src="{{ item.image }}" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text"><i class="fa fa-history"></i>{{ item.time }}</p>
+                    <h4 class="card-title mb-3">{{item.name}}</h4>
+                    <p class="card-text"><i class="fa fa-dollar"></i>{{ item.price }}</p>
+                    <p class="card-text"><i class="fa fa-star"></i>{{ item.qualification }} Calificación</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
